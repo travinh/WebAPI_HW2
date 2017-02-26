@@ -1,347 +1,313 @@
 {
-	"id": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-	"name": "HW2",
-	"description": "4 paths /GETS, /POSTS, /PUTS, /DELETES for 4 methods",
-	"order": [
-		"d85b900e-df9e-a8db-811c-de2f663254f9",
-		"2aad38c6-de45-3b9f-2b73-9619abc7c781",
-		"1a1355f4-3c39-2e8e-d356-ff0cd1ab2091",
-		"2d270136-767a-fd2c-8c45-a7776873439d",
-		"be8c27ef-d96b-9956-2481-3cac71236fe9",
-		"277afaf0-388c-791b-4b92-53ffca941b1b",
-		"d648ef29-2fd1-03f0-5d7b-e44b35067028",
-		"a0e73e41-1118-5c46-864d-4d90081792e1",
-		"51c7282d-e941-1dbe-295d-f660296e73e7",
-		"700b4218-5236-0cd8-80b4-1d990f2002b1",
-		"0b4f614b-9127-3c05-5242-5ae128b29006",
-		"c5743e72-5fe7-5d28-b61f-6c1cf3a9e3a7",
-		"81114ba2-9109-a268-3ead-c0d895bf34c5",
-		"68fcd06b-4da1-e753-06a5-50405836b3ca",
-		"28a59b28-105e-f04b-2513-a671a717b23d",
-		"9cb01658-a02d-e502-4d7a-b3fc802ebd1c"
-	],
-	"folders": [],
-	"timestamp": 1488063169206,
-	"owner": "1497764",
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "HW2",
+		"_postman_id": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
+		"description": "4 paths /GETS, /POSTS, /PUTS, /DELETES for 4 methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "0b4f614b-9127-3c05-5242-5ae128b29006",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "PUT",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073209584,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"description": "/posts for POST method only\nThis is PUT method, error!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "1a1355f4-3c39-2e8e-d356-ff0cd1ab2091",
-			"headers": "",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "PUT",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073152521,
 			"name": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"description": "/gets for GET method only\nThis is PUT method, error!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/gets for GET method only\nThis is GET method, success!"
+			},
+			"response": []
 		},
 		{
-			"id": "277afaf0-388c-791b-4b92-53ffca941b1b",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073181587,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"description": "/puts for PUT method only\nThis is GET method, error!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
-		},
-		{
-			"id": "28a59b28-105e-f04b-2513-a671a717b23d",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073225653,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"description": "/posts for DELETE method only\nThis is POST method, error!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "2aad38c6-de45-3b9f-2b73-9619abc7c781",
-			"headers": "",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073142883,
 			"name": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"description": "/gets for GET method only\nThis is POST method, error!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/gets for GET method only\nThis is POST method, error!"
+			},
+			"response": []
 		},
 		{
-			"id": "2d270136-767a-fd2c-8c45-a7776873439d",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073156788,
 			"name": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"description": "/gets for GET method only\nThis is DELETE method, error!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/gets for GET method only\nThis is PUT method, error!"
+			},
+			"response": []
 		},
 		{
-			"id": "51c7282d-e941-1dbe-295d-f660296e73e7",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073198376,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"description": "/posts for POST method only\nThis is POST method, success!\n\"Name\": string",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "68fcd06b-4da1-e753-06a5-50405836b3ca",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073222091,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"description": "/posts for DELETE method only\nThis is GET method, error!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "700b4218-5236-0cd8-80b4-1d990f2002b1",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073205651,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"description": "/posts for POST method only\nThis is GET method, error!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "81114ba2-9109-a268-3ead-c0d895bf34c5",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073218250,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"description": "/posts for DELETE method only\nThis is DELETE method, success!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "9cb01658-a02d-e502-4d7a-b3fc802ebd1c",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "PUT",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073229634,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
-			"description": "/posts for DELETE method only\nThis is PUT method, error!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "a0e73e41-1118-5c46-864d-4d90081792e1",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073189367,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"description": "/puts for PUT method only\nThis is DELETE method, error!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
-		},
-		{
-			"id": "be8c27ef-d96b-9956-2481-3cac71236fe9",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "PUT",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073162667,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"description": "/puts for PUT method only\nThis is PUT method, success! \nWith variable \"ID\" : integer",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
-		},
-		{
-			"id": "c5743e72-5fe7-5d28-b61f-6c1cf3a9e3a7",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073213016,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
-			"description": "/posts for POST method only\nThis is DELETE method, error!\n",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"name\" : \"Spider Man\"\n}"
-		},
-		{
-			"id": "d648ef29-2fd1-03f0-5d7b-e44b35067028",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1488073185070,
-			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
-			"description": "/puts for PUT method only\nThis is POST method, error!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
-		},
-		{
-			"id": "d85b900e-df9e-a8db-811c-de2f663254f9",
-			"headers": "",
-			"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
 			"name": "http://vinh1993-test.apigee.net/FinalHW2/gets",
-			"description": "/gets for GET method only\nThis is GET method, success!",
-			"collectionId": "c3c6ee51-2840-fbd8-489c-dafe0db431bc",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 123\n}"
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/gets",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/gets for GET method only\nThis is DELETE method, error!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/puts for PUT method only\nThis is PUT method, success! \nWith variable \"ID\" : integer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/puts for PUT method only\nThis is GET method, error!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/puts for PUT method only\nThis is POST method, error!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/puts",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 123\n}"
+				},
+				"description": "/puts for PUT method only\nThis is DELETE method, error!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for POST method only\nThis is POST method, success!\n\"Name\": string"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for POST method only\nThis is GET method, error!\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for POST method only\nThis is PUT method, error!\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/posts",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for POST method only\nThis is DELETE method, error!\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for DELETE method only\nThis is DELETE method, success!\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for DELETE method only\nThis is GET method, error!\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for DELETE method only\nThis is POST method, error!\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+			"request": {
+				"url": "http://vinh1993-test.apigee.net/FinalHW2/deletes",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Spider Man\"\n}"
+				},
+				"description": "/posts for DELETE method only\nThis is PUT method, error!\n"
+			},
+			"response": []
 		}
 	]
 }
